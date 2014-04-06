@@ -2,4 +2,3 @@ passgen
 =======
 
 Password generator
-aslkdfj
