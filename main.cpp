@@ -16,6 +16,12 @@ int main(int argc, char *argv[])
 	}
 	PASSGEN pg;
 	pg.init(initFilename);
-	cout << pg.generate(input, 10) << endl;
+	string pass = pg.generate(input, 10); 
+	cout << pass << endl;
+
+	//TODO: Make it work only with specific key
+	//Copy to clipboard
+	string exec = "echo \"" + pass + "\" | xclip -selection \"clipboard\"";
+	system(exec.c_str());
 	return 0;
 }
