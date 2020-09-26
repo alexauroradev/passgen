@@ -12,7 +12,7 @@ const std::string PASSGEN::LETTERS_NUMBERS_MARKS("abcdefghijklmnopqrstuvwxyzABCD
 void PASSGEN::init(std::string filename){
 	std::ifstream initfile;
 	initfile.open(filename.c_str());
-	initfile >>  alphabetType;
+	initfile >> alphabetType;
 	switch (alphabetType) {
 		case 1:
 			alphabet = PASSGEN::LETTERS;
